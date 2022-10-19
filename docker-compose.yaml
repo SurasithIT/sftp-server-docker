@@ -1,0 +1,13 @@
+version: "3"
+services:
+  sftp:
+    image: "atmoz/sftp"
+    container_name: sftp
+    volumes:
+      -  ./upload:/home/foo/upload
+      - ./key/ssh_host_rsa_key.pub:/home/foo/.ssh/keys/ssh_host_rsa_key.pub:ro
+      - ./key/ssh_host_ed25519_key.pub:/home/foo/.ssh/keys/ssh_host_ed25519_key.pub:ro
+    ports:
+      - "2222:22"
+    command: foo:pass:1001
+
