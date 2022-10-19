@@ -1,2 +1,6 @@
 upload/*
+!upload/mock.file
+
 key/*
+!key/mock.key
+!key/mock.pub
