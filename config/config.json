@@ -1,0 +1,19 @@
+{
+    "Global": {
+        "Chroot": {
+            "Directory": "%h",
+            "StartPath": "sftp"
+        },
+        "Directories": ["sftp", "sftp/upload"]
+    },
+    "Users": [
+        {
+            "Username": "demo_usr",
+            "Password": "demo",
+            "PublicKeys": [
+                "/home/demo_usr/.ssh/keys/ssh_host_rsa_key.pub",
+                "/home/demo_usr/.ssh/keys/ssh_host_ed25519_key.pub"
+            ]
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 # SFTP
 
-- [atmoz/sftp docker image](https://hub.docker.com/r/atmoz/sftp)
+- [emberstack/sftp docker image](https://github.com/emberstack/docker-sftp)
 
 ### generate ssh keys command
 
